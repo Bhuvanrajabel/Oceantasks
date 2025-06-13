@@ -1,0 +1,60 @@
+##break statement
+for i in range(1,10):
+    if i==3:
+        break
+    print(i)
+
+##continue statment
+for i in range (1,10):
+    if i==3:
+        continue
+    print(i)
+
+##while loop
+a=1
+while(a<10):
+    print(a)
+    a+=1
+
+
+               
+##factorial
+num=int(input("Enter a number:"))
+factorial = 1
+i = 1
+while i <= num:
+    factorial *= i
+    i += 1
+print(f"The factorial of {num} is {factorial}")
+
+
+##Multiplication of a table
+number = int(input("Enter a number to print its multiplication table: "))
+i = 1
+while i <= 10:
+    result = number * i
+    print(f"{number} x {i} = {result}")
+    i += 1
+
+##sum of a number
+n=int(input("enter any number:"))
+i=1
+total=0
+while i<=n:
+    total +=i
+    i +=1
+print(n,total)
+
+##even numbers from 1 to 100
+i=0
+while i<100:
+    i+=1
+    if i%2==0:
+        print(i)
+
+##odd numbers from 1 to 100
+i=0
+while i<100:
+    i+=1
+    if i%1==0:
+        print(i)
