@@ -1,7 +1,0 @@
-
-tuplee = (1,2,3,4,5) 
-reverse_tuplee= []
-for i in range(len(tuplee)-1, -1, -1):
-    reverse_tuplee.append(tuplee[i])
-x=tuple(reverse_tuplee)    
-print("Reverse a list:", x)
