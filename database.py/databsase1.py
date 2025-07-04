@@ -21,33 +21,41 @@ def userdetail(data):
 userdetail(Information)
 
 
-# Information2= [
-# {
-#     "name": "Kumar", 
-#     "Roll no": 15,
-#     "Class": "B1", 
-#     "Record": "standard"
-# },
+Information2= [
+{
+    "name": "Kumar", 
+    "Roll no": 15,
+    "Class": "B1", 
+    "Record": "standard"
+},
 
-# {
-#     "name": "Arumainathan", 
-#     "Roll no": 19, 
-#     "Class": "B1", 
-#     "Record": "Good"
-# },
+{
+    "name": "Arumainathan", 
+    "Roll no": 19, 
+    "Class": "B1", 
+    "Record": "Good"
+},
 
-# {
-#     "name":"SivaGnanan",
-#     "Roll no":99,
-#     "Class":"B1,B2",
-#     "Record":"Donkey squard"
+{
+    "name":"SivaGnanan",
+    "Roll no":99,
+    "Class":"B1,B2",
+    "Record":"Donkey squard"
 
-# }
+}
 
-# ]
-# def data(a):
-#     user=Collection.insert_many(a)
-#     print("Insert many data created")
+]
+def data(a):
+    user=Collection.insert_many(a)
+    print("Insert many data created")
 
-# data(Information2)
+data(Information2)
 
+def sort():
+
+    mydata=Collection.find().sort("Roll no",1)
+    # mydata=Collection.find().sort("name",-1)
+    for i in mydata:
+        print(i)
+
+sort()
